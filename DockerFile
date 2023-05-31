@@ -2,7 +2,7 @@
 FROM openjdk:11-jre-slim-buster
 
 # Add Maintainer Info
-LABEL maintainer="amollimaye"
+LABEL maintainer="erickelRojo"
 
 # Add a volume pointing to /tmp
 VOLUME /tmp
