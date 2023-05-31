@@ -1,7 +1,4 @@
-#RetoBackEnd
-Reto BackEnd
-
-
+#Backend Challenge
 
 #GitHub repository
 https://github.com/erickelrojo23/retoBackEnd
@@ -12,70 +9,13 @@ docker pull erickelrojo/backend
 
 
 #Request
+http://localhost:8091/disclaimer/list
+http://localhost:8091/disclaimer/list?text=hola
 
-{
-
-    "tipoObjeto": "Computadora",
-    "computadora": {
-        "marca": "DELL",
-        "serie":"1k2345",
-        "tipoPantalla": "LCD",
-        "tarjetaVideo": "nvidia",
-        "tipoLectora": "dvd"
-    }
-}
-
-{
-
-    "tipoObjeto": "Laptop",
-    "laptop": {
-        "marca": "HP",
-        "serie":"ER2345",
-        "tipoPantalla": "LED",
-        "tarjetaVideo": "msi",
-        "tipoLectora": "sin lectora"
-    }
-}
-
-{
-
-    "tipoObjeto": "MaquinaEscribir",
-    "maquinaEscribir": {
-        "marca": "Sansung",
-        "serie":"FH12312"
-    }
-}
+http://localhost:8091/acceptances
+http://localhost:8091/acceptances?user_id=10
 
 
 #Response
 
-[
 
-    {
-        "computadora": {
-            "idComputadora": 1,
-            "marca": "DELL",
-            "serie": "1k2345",
-            "tipoPantalla": "LCD",
-            "tarjetaVideo": "nvidia",
-            "tipoLectora": "dvd",
-            "comun": null
-        },
-        "laptopArray": [
-            ["idLaptop: 1"],
-            ["marca: HP"],
-            ["serie: ER2345"],
-            ["pantalla: LED"],
-            ["tarjetaVideo: msi"],
-            ["tipoLectora: sin lectora"]
-        ],
-        "maquinaEscribirs": [
-            {
-                "idMaquina": 1,
-                "marca": "Sansung",
-                "serie": "FH12312",
-                "comun": null
-            }
-        ]
-    }
-]
